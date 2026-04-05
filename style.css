@@ -1,27 +1,29 @@
-*{
+*{                             /* quita espacios que el navegador pone por defecto y hace que la pagina inicie limpia*/ 
     margin: 0;
     padding: 0;
 }
 
-body{
-    background: #c8e0e4;
+body{ 
+    background: #c8e0e4;     /* color de fondo de toda la página */
 }
-#contenedor{
+#contenedor{                   /* contenedor que organiza todas las cajitas en columnas */
     display: grid;
-    grid-template-columns: repeat(3,1fr) /*divide en 3 columnas iguales*/;
+    grid-template-columns: repeat(3,1fr)   /*divide en 3 columnas iguales*/;
     width: 90%;
     background-color: rgb(225, 215, 202);
     margin-left: auto;
     margin-right: auto;
 }
-.espacio{
-    height: 120px;
-    border: 1px rgb(49, 88, 99) solid;
+.espacio{                      /* este espacio es para cada cajita de los ejercicios */
+    padding: 20px;
+    background-color: azure;
+    border-radius: 10px;
+    height: 150px;
+    border: 1px rgb(21, 119, 146) solid;
     
-
-
 }
-header{
+
+header{                        /* encabezado de la página (nombre arriba) */
     color: rgb(6, 57, 69);
     display: flex;
     justify-content: center;
@@ -29,13 +31,13 @@ header{
     align-items: center;
 }
 
-main {
+main {                         /* zona principal donde está el contenido */
     grid-area: main;
     display: flex;
     justify-content: center;
 }
 
-footer{
+footer{                       /* parte de abajo de la página(pie de pagina) */
     grid-area: footer;
     width: 100%;
     height: 80px;

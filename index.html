@@ -13,24 +13,84 @@
     <main>
 
 <div id="contenedor">
-    <!-- TODAS tus cajitas -->
+    <!-- Todas las cajitas -->
 </div>
 
 </main>
 
     <div id = "contenedor">
-        <div class="espacio">calculadora 
-            <input type="number" id="n1" placeholder="numero 1">
-            <input type="number" id="n2" placeholder="numero 2">
-            <button onclick="sumar()">Sumar</button>
-            <br>
-            <input type="text" id="resultado" placeholder="resultado" readonly>
-            <h1 id="resultext">resultado:</h1>
+
+        <div class="espacio">
+            <h3>Precio Total Con Iva</h3>
+
+                <label for="Precio">Ingresa el precio sin Iva:</label>
+                <br>
+                <input type="text" id="Precio" placeholder="Precio sin Iva">
+                <br>
+                <label for="Iva">Ingresa el Iva (%):</label>
+                <input type="text" id="Iva" placeholder="Iva (%)">
+                <br>
+                <button onclick="PrecioConIva()">Calcular</button>
+                <br>
+                <label for="resultado">El precio con Iva es:</label>
+                <input type="text" id="resultado" readonly>        
         </div>
 
-        <div class ="espacio"> Espacio 2</div>
-        <div class ="espacio"> Espacio 3</div>
-        <div class ="espacio"> Espacio 4</div>
+
+        <div class ="espacio"> 
+            <h3>Area y Perimetro</h3>
+
+            <label for="Lado">Ingresa el lado del cuadrado:</label>
+            <br>
+            <input type ="text" id ="Lado" placeholder="Lado del cuadrado">
+            <br>
+            <button onclick="calcularAreayperimetro()">CalcularÁreayPerímetro</button>
+            <br>
+            <label for="area">El area es:</label>
+            <input type ="text" id="area" placeholder="Area del cuadrado" readonly>
+            <br>
+            <label for="perimetro">El perímetro es:</label>
+            <input type ="text" id="perimetro" placeholder="Perímetro del cuadrado" readonly>
+        </div>
+
+
+        <div class ="espacio"> 
+            <h3>Decenas y unidades </h3>
+
+            <label for="Numero">Ingresa un número:</label>
+            <br>
+            <input type ="text" id ="Numero" placeholder="Número">
+            <br>
+            <button onclick="DecenasYUnidades()">Calcular</button>
+            <br>
+            <label for="decenas">Las decenas son:</label>
+            <input type ="text" id="decenas" placeholder="Decenas" readonly>
+            <br>
+            <label for="unidades">Las unidades son:</label>
+            <input type ="text" id="unidades" placeholder="Unidades" readonly>
+        </div>
+
+
+        <div class ="espacio">
+             <h3>Calcular Ingredientes</h3>
+            <label for="Personas">Ingresa el número de personas:</label>
+            <br>                
+            <input type ="text" id ="Personas" placeholder="Número de personas">
+            <br>
+            <button onclick="CalcularIngredientes()">Calcular</button>
+            <br>
+            <label for="patatas">Patatas:</label>
+            <input type ="text" id="patatas" placeholder="gramos de patatas" readonly>
+            <br>
+            <label for ="huevos">Huevos:</label>
+            <input type ="text" id="huevos" placeholder="cantidad de huevos" readonly>
+            <br>
+            <label for ="cebolla">Cebolla:</label>
+            <input type ="text" id="cebolla" placeholder="gramos de cebolla" readonly>
+            
+            </div>
+
+
         <div class ="espacio"> Espacio 5</div>
         <div class ="espacio"> Espacio 6</div>
         <div class ="espacio"> Espacio 7</div>
@@ -51,7 +111,7 @@
     </div>
 
 <footer>
-    <h2>fin </h2>
+    <h2>Pie de pagina</h2>
 </footer>
 
     <script src="ejercicios.js"></script>
@@ -61,3 +121,4 @@
 
 </body>
 </html>
+
