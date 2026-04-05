@@ -1,11 +1,10 @@
-function sumar (){
-    n1 = parseInt (document.getElementById("n1").value)
-    n2 = parseInt (document.getElementById("n2").value)
-    suma = n1 + n2
-    //mostar en input
-    document.getElementById("resultado").value = suma
-    //mostrar en h1
-    texto=document.getElementById("resultex").textContent
-    document.getElementById("resultex").textContent=texto+suma
-    
+function PrecioconIva(){
+    let precio = parseFloat(document.getElementById("Precio").value)
+    let Iva = parseFloat(document.getElementById("Iva").value)
+    let precioFinal = precio + (precio * (Iva / 100))
+    document.getElementById("resultado").value = "El precio con Iva es: " + precioFinal.toFixed(2)
 }
+
+
+function calcularAreayperimetro(){
+
