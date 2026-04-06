@@ -61,6 +61,9 @@ function AdivinarNumero(){
     }
 }
 
+
+//ejercicio 6 generar la serie de Fibonacci//
+
 function GenerarSerie() {
     let cantidad = parseInt(document.getElementById("cantidadNumeros").value);                                //Leer cuántos números quiere ver el usuario//
     let serie = [0, 1];                                                                                       //Crear la lista con los dos primeros números (siempre son 0 y 1)//
@@ -74,6 +77,8 @@ function GenerarSerie() {
     document.getElementById("resultadoSerie").value = serie.join(", ");
 }
 
+//ejercicio 7 comparar dos numeros y decir cual es mayor o si son iguales//
+
 function calcularMayoroIgual() {
     let num1 = parseFloat(document.getElementById("num1").value)
     let num2 = parseFloat(document.getElementById("num2").value)
@@ -85,6 +90,9 @@ function calcularMayoroIgual() {
         document.getElementById("esMayor").value = "Los números son iguales.";
     }
 }
+
+//ejercicio 8 calcular el factorial de un numero//
+
 function CalcularFactorial() {
     let numero = parseInt(document.getElementById("numFactorial").value)
     let factorial = 1
@@ -97,6 +105,8 @@ function CalcularFactorial() {
     }
     document.getElementById("resFactorial").value ="El factorial de " + numero + " es: " + factorial;
 }
+
+//ejercicio 9 buscar los multiplos de 6 entre dos numeros ingresados por el usuario//
 
 function BuscarMultiplos() {
     let num1 = parseInt(document.getElementById("numero1").value)
@@ -117,6 +127,8 @@ function BuscarMultiplos() {
     }
 }
 
+//ejercicio 10 generar 20 numeros aleatorios entre 1 y 100, guardarlos en una lista, y luego crear dos listas nuevas, una con los números pares y otra con los impares//
+
 function procesarNumeros() {
     let original =[]                                                       //Crear las 3 listas (arreglos) vacías//
     let pares = []
@@ -136,6 +148,8 @@ function procesarNumeros() {
     document.getElementById("listaImpares").value = impares.join(", ")
 }
 
+//ejercicio 11 generar 10 numeros aleatorios entre 10 y 20, guardarlos en una lista, y luego eliminar los múltiplos de 3 de esa lista//
+
 function EliminarMultiplos() {
     let original = [];
     let filtrado = [];
@@ -147,6 +161,8 @@ function EliminarMultiplos() {
     document.getElementById("resorigal").value = original.join(", ");
     document.getElementById("resfinal").value = filtrado.join(", ");
 }
+
+//ejercicio 12 determinar el tipo de triángulo según las longitudes de sus lados, y calcular su área//
 
 function TipodeTriangulo() {
     let a = parseFloat(document.getElementById("ladoA").value)
@@ -167,12 +183,17 @@ function TipodeTriangulo() {
     document.getElementById("resultadoTriangulo").value = `Tipo: ${tipo}, Área: ${area.toFixed(2)}`;
 }
 
+//ejercicio 13 contar el número de caracteres en cada palabra de una lista, y mostrar el total de caracteres//
+
 function ContadordeCaracteres() {
     let palabras = ["Sofia", "Software", "NaiApp", "JavaScript"]; 
     let conteo = palabras.map(p => p.length);
     let total = conteo.reduce((a, b) => a + b, 0);
     document.getElementById("resultadoContador").value = `Letras: ${conteo.join(", ")} | Total caracteres: ${total}`;
 }
+
+
+//ejercicio 14 invertir el orden de los elementos en una lista sin usar funciones predefinidas, y luego hacerlo usando la función reverse()//
 
 function InvertirArreglo() {
     let original = []
@@ -190,6 +211,7 @@ function InvertirArreglo() {
     document.getElementById("arregloReverse").value = auto.join(" - ")
 }
 
+//ejercicio 15 crear una calculadora básica que permita sumar, restar, multiplicar y dividir dos números ingresados por el usuario//
 
 function CalculadoraBasica() {
     let num1 = parseFloat(document.getElementById("n1").value);
