@@ -21,89 +21,236 @@
     <div id = "contenedor">
 
         <div class="espacio">
-            <h3>Precio Total Con Iva</h3>
+        <h3>1.Precio Total Con Iva</h3>
 
-                <label for="Precio">Ingresa el precio sin Iva:</label>
-                <br>
-                <input type="text" id="Precio" placeholder="Precio sin Iva">
-                <br>
-                <label for="Iva">Ingresa el Iva (%):</label>
-                <input type="text" id="Iva" placeholder="Iva (%)">
-                <br>
-                <button onclick="PrecioConIva()">Calcular</button>
-                <br>
-                <label for="resultado">El precio con Iva es:</label>
-                <input type="text" id="resultado" readonly>        
-        </div>
-
-
-        <div class ="espacio"> 
-            <h3>Area y Perimetro</h3>
-
-            <label for="Lado">Ingresa el lado del cuadrado:</label>
-            <br>
-            <input type ="text" id ="Lado" placeholder="Lado del cuadrado">
-            <br>
-            <button onclick="calcularAreayperimetro()">CalcularÁreayPerímetro</button>
-            <br>
-            <label for="area">El area es:</label>
-            <input type ="text" id="area" placeholder="Area del cuadrado" readonly>
-            <br>
-            <label for="perimetro">El perímetro es:</label>
-            <input type ="text" id="perimetro" placeholder="Perímetro del cuadrado" readonly>
-        </div>
+        <label for="Precio">Ingresa el precio sin Iva:</label>
+        <br>
+        <input type="text" id="Precio" placeholder="Precio sin Iva">
+        <br>
+        <label for="Iva">Ingresa el Iva (%):</label>
+        <input type="text" id="Iva" placeholder="Iva (%)">
+        <br>
+        <button onclick="PrecioConIva()">Calcular</button>
+        <br>
+        <label for="resultado">El precio con Iva es:</label>
+        <input type="text" id="resultado" readonly>        
+    </div>
 
 
         <div class ="espacio"> 
-            <h3>Decenas y unidades </h3>
+        <h3>2.Area y Perimetro</h3>
 
-            <label for="Numero">Ingresa un número:</label>
-            <br>
-            <input type ="text" id ="Numero" placeholder="Número">
-            <br>
-            <button onclick="DecenasYUnidades()">Calcular</button>
-            <br>
-            <label for="decenas">Las decenas son:</label>
-            <input type ="text" id="decenas" placeholder="Decenas" readonly>
-            <br>
-            <label for="unidades">Las unidades son:</label>
-            <input type ="text" id="unidades" placeholder="Unidades" readonly>
-        </div>
+        <label for="Lado">Ingresa el lado del cuadrado:</label>
+        <br>
+        <input type ="text" id ="Lado" placeholder="Lado del cuadrado">
+        <br>
+        <button onclick="calcularAreayperimetro()">CalcularÁreayPerímetro</button>
+        <br>
+        <label for="area">El area es:</label>
+        <input type ="text" id="area" placeholder="Area del cuadrado" readonly>
+        <br>
+        <label for="perimetro">El perímetro es:</label>
+        <input type ="text" id="perimetro" placeholder="Perímetro del cuadrado" readonly>
+    </div>
+
+
+        <div class ="espacio"> 
+        <h3>3.Decenas y unidades </h3>
+
+        <label for="Numero">Ingresa un número:</label>
+        <br>
+        <input type ="text" id ="Numero" placeholder="Número">
+        <br>
+        <button onclick="DecenasYUnidades()">Calcular</button>
+        <br>
+        <label for="decenas">Las decenas son:</label>
+        <input type ="text" id="decenas" placeholder="Decenas" readonly>
+        <br>
+        <label for="unidades">Las unidades son:</label>
+        <input type ="text" id="unidades" placeholder="Unidades" readonly>
+    </div>
 
 
         <div class ="espacio">
-             <h3>Calcular Ingredientes</h3>
-            <label for="Personas">Ingresa el número de personas:</label>
-            <br>                
-            <input type ="text" id ="Personas" placeholder="Número de personas">
+        <h3>4.Calcular Ingredientes</h3>
+        <label for="Personas">Ingresa el número de personas:</label>
+        <br>                
+        <input type ="text" id ="Personas" placeholder="Número de personas">
+        <br>
+        <button onclick="CalcularIngredientes()">Calcular</button>
+        <br>
+        <label for="patatas">Patatas:</label>
+        <input type ="text" id="patatas" placeholder="gramos de patatas" readonly>
+        <br>
+        <label for ="huevos">Huevos:</label>
+        <input type ="text" id="huevos" placeholder="cantidad de huevos" readonly>
+        <br>
+        <label for ="cebolla">Cebolla:</label>
+        <input type ="text" id="cebolla" placeholder="gramos de cebolla" readonly>
+    </div>
+
+
+        <div class ="espacio"> 
+        <h3>5.Adivinar el Numero secreto</h3>
+
+        <label for="NumeroIngresado">Ingresa un número entre 0 - 100:</label>
+        <br>    
+        <input type ="number" id ="NumeroIngresado" placeholder="Número entre 0 - 100">
+        <br>
+        <button onclick="AdivinarNumero()">Adivinar</button>
+        <br>
+        <Label for ="intentos">Intentos:</Label>
+        <input type ="text" id="intentos" placeholder="Número de intentos" readonly>
+        <br>
+        <label for="resultadoAdivinar">Resultado:</label>   
+        <input type ="text" id="resultadoAdivinar" placeholder="Resultado" readonly style="width: 300px;"> 
+    </div>
+
+
+        <div class ="espacio"> 
+        <h3>6.Serie de Fibonacci</h3>
+
+         <label for="cantidadNumeros">¿Cuántos números de la serie quieres ver?</label>
+         <input type="number" id="cantidadNumeros" placeholder="ingresa la cantidad">
+         <br>
+         <button onclick="GenerarSerie()">Generar Serie</button>
+         <br>
+         <label for="resultadoSerie">Serie:</label>
+         <input type="text" id="resultadoSerie" readonly style="width: 300px;">
+    </div>
+
+
+        <div class ="espacio"> 
+        <h3>7.¿Cuál número es mayor o igual?</h3>
+    
+        <label for="num1">Primer número:</label>
+        <input type="number" id="num1" placeholder="Ej: 15">
+        <br>
+        <label for="num2">Segundo número:</label>
+        <input type="number" id="num2" placeholder="Ej: 8">
+        <br>
+        <button onclick="calcularMayoroIgual()">Comparar Números</button>
+        <br>
+        <label for="esMayor">Resultado:</label>
+        <input type="text" id="esMayor" readonly style="width: 300px;">
+    </div>
+
+
+        <div class ="espacio"> 
+        <h3>8. Calcular Factorial</h3>
+    
+        <label for="numFactorial">Ingresa un número entero:</label>
+        <input type="number" id="numFactorial" placeholder="Ej: 5">
+        <br>
+        <button onclick="CalcularFactorial()">Calcular Factorial</button>
+        <br>
+        <label for="resFactorial">Resultado:</label>
+        <input type="text" id="resFactorial" readonly style="width: 250px;">
+    </div>
+
+
+        <div class ="espacio"> 
+        <h3>9. Múltiplos de 6</h3>
+    
+        <label for="numero1">Desde el número:</label>
+        <input type="number" id="numero1" placeholder="Ej: 1">
+        <br>   
+        <label for="numero2">Hasta el número:</label>
+        <input type="number" id="numero2" placeholder="Ej: 40">
+        <br>    
+        <button onclick="BuscarMultiplos()">Buscar Múltiplos</button>
+        <br>
+        <label for="resMultiplos">Múltiplos encontrados:</label>
+        <textarea id="resMultiplos" readonly rows="4" style="width: 100%; max-width: 400px; resize: none;"></textarea>
+    </div>
+
+
+        <div class ="espacio"> 
+        <h3>10. Clasificador de Pares e Impares</h3>
+
+        <button onclick="procesarNumeros()">Generar y Clasificar</button>
+        <br><br>
+        <label>Lista Original (20 números):</label><br>
+        <textarea id="listaOriginal" readonly rows="3" style="width: 100%; max-width: 400px;"></textarea>
+        <br>
+        <label>Números Pares:</label><br>
+        <input type="text" id="listaPares" readonly style="width: 100%; max-width: 300px;">
+        <br>
+        <label>Números Impares:</label><br>
+        <input type="text" id="listaImpares" readonly style="width: 100%; max-width: 300px;">
+    </div>
+
+
+        <div class ="espacio"> 
+            <h3>11.Eliminar multiplos de 3(rango 10-20)</h3>
+
+            <button onclick="EliminarMultiplos()">Generar y Filtrar</button>
             <br>
-            <button onclick="CalcularIngredientes()">Calcular</button>
+            <label>Original:</label>
+            <input type="text" id="resorigal" readonly style="width: 90%;">
             <br>
-            <label for="patatas">Patatas:</label>
-            <input type ="text" id="patatas" placeholder="gramos de patatas" readonly>
-            <br>
-            <label for ="huevos">Huevos:</label>
-            <input type ="text" id="huevos" placeholder="cantidad de huevos" readonly>
-            <br>
-            <label for ="cebolla">Cebolla:</label>
-            <input type ="text" id="cebolla" placeholder="gramos de cebolla" readonly>
+            <label>Sin múltiplos de 3:</label>
+            <input type="text" id="resfinal" readonly style="width: 90%;">
+    </div>
+
+
+        <div class ="espacio"> 
+        <h3>12. Área y Tipo de Triángulo</h3>
             
-            </div>
+        <input type="number" id="ladoA" placeholder="Lado A">
+        <input type="number" id="ladoB" placeholder="Lado B">
+        <input type="number" id="ladoC" placeholder="Lado C">
+        <br>
+        <button onclick="TipodeTriangulo()">Calcular</button>
+        <br>
+        <input type="text" id="resultadoTriangulo" readonly style="width: 90%;">
+    </div> 
 
 
-        <div class ="espacio"> Espacio 5</div>
-        <div class ="espacio"> Espacio 6</div>
-        <div class ="espacio"> Espacio 7</div>
-        <div class ="espacio"> Espacio 8</div>
-        <div class ="espacio"> Espacio 9</div>
-        <div class ="espacio"> Espacio 10</div>
-        <div class ="espacio"> Espacio 11</div>
-        <div class ="espacio"> Espacio 12</div> 
-        <div class ="espacio"> Espacio 13</div>
-        <div class ="espacio"> Espacio 14</div>
-        <div class ="espacio"> Espacio 15</div>
+        <div class ="espacio"> 
+        <h3>13. Contador de Caracteres</h3>
+
+        <p>Palabras: Sofia, Software, NaiApp, JavaScript</p>
+        <button onclick="ContadordeCaracteres()">Analizar Palabras</button>
+        <br>
+        <label>resultado:</label>
+        <input type="text" id="resultadoContador" readonly style="width: 90%;">
+    </div>
 
 
+        <div class ="espacio"> 
+        <h3>14. Generar e Invertir Arreglos</h3>
+        <button onclick="InvertirArreglo()">Generar e Invertir</button><br><br>
+
+        <label>1. Arreglo Original (Aleatorio):</label><br>
+        <input type="text" id="arregloOriginal" readonly style="width: 95%; margin-bottom: 10px;">
+
+        <label>2. Inversión Algorítmica (Ciclo For):</label><br>
+        <input type="text" id="arregloInvertido" readonly style="width: 95%; margin-bottom: 10px; color: darkgreen;">
+
+        <label>3. Inversión con Función (.reverse):</label><br>
+        <input type="text" id="arregloReverse" readonly style="width: 95%; color: darkblue;">
+    </div>
+
+
+        <div class ="espacio">
+        <h3>15. Calculadora Basica </h3>
+    
+        <input type="number" id="n1" placeholder="Número 1" style="width: 45%;">
+        <input type="number" id="n2" placeholder="Número 2" style="width: 45%;">
+        <br>
+        <label>Selecciona una operación:</label><br>
+        <input type="radio" name="operacion" value="sumar" checked> Sumar (+) <br>
+        <input type="radio" name="operacion" value="restar"> Restar (-) <br>
+        <input type="radio" name="operacion" value="multiplicar"> Multiplicar (*) <br>
+        <input type="radio" name="operacion" value="dividir"> Dividir (/)
+        <br>
+        <button onclick="CalculadoraBasica()">Calcular Resultado</button>
+        <br>
+        <label>Resultado:</label>
+        <input type="text" id="resCalculadora" readonly style="width: 95%;">
+
+    </div>
 
 
 
